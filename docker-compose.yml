@@ -10,8 +10,7 @@ services:
       - VITE_API_URL=http://localhost:8002  # Set API URL to communicate with the backend
     depends_on:
       - backend  # Ensure backend starts before frontend
-      
-
+  
   backend:
     build:
       context: ./backend  # Path to your Django project directory
